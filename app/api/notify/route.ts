@@ -3,7 +3,7 @@ import dbConnect from "../../../db/db.config";
 import Student from "../../../model/studentModel";
 
 // SMSBangladesh API Configuration
-const SMS_API_URL = "http://panel.smsbangladesh.com/api";
+const SMS_API_URL = process.env.SMS_PROVIDER;
 const SMS_USER = process.env.SMS_BANGLADESH_USER || "";
 const SMS_PASSWORD = process.env.SMS_BANGLADESH_PASSWORD || "";
 const SMS_MASKING = process.env.SMS_BANGLADESH_MASKING || "ENGLISHAID";
